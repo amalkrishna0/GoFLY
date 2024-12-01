@@ -202,7 +202,14 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
-
+                if (!matchingFlights.isEmpty()) {
+                    // Pass the matchingFlights list to SearchActivity
+                    Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                    intent.putStringArrayListExtra("matchingFlights", matchingFlights); // Pass data
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(MainActivity.this, "No flights found for the selected route.", Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
