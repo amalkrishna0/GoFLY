@@ -10,6 +10,7 @@ constraintlayout = "2.2.0"
 firebaseAnalytics = "22.1.2"
 firebaseDatabase = "21.0.0"
 picasso = "2.71828"
+googleGmsGoogleServices = "4.4.2"
 
 [libraries]
 picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picasso" }
@@ -25,4 +26,5 @@ firebase-database = { group = "com.google.firebase", name = "firebase-database",
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 
