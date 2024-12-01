@@ -23,5 +23,19 @@ public class IntroActivity extends AppCompatActivity {
 
         btnStart = findViewById(R.id.startBtn);
         btnHave = findViewById(R.id.haveBtn);
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(IntroActivity.this, RegisterActivity.class));
+            }
+        });
+
+        btnHave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(IntroActivity.this,LoginActivity.class));
+            }
+        });
     }
 }
